@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Yeelo Liquid Tube</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --brand:#FF8C00;
+    --brand-light:#FFCA00;
+    --bg:#F9FAFB;
+    --card:#fff;
+    --text:#1a1a2e;
+    --mid:#555;
+    --light:#888;
+    --border:#E5E7EB;
+  }
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:var(--bg);color:var(--text);
+    line-height:1.7;font-size:16px;
+  }
+
+  /* ── HEADER ── */
+  header{
+    background:linear-gradient(135deg,#FF8C00,#FFCA00);
+    padding:40px 24px 36px;text-align:center;
+  }
+  .header-icon{font-size:56px;display:block;margin-bottom:12px;}
+  .header-title{
+    font-size:28px;font-weight:900;color:#fff;
+    letter-spacing:-.5px;margin-bottom:4px;
+  }
+  .header-sub{
+    font-size:14px;color:rgba(255,255,255,.82);font-weight:500;
+  }
+  .updated-chip{
+    display:inline-block;margin-top:14px;
+    background:rgba(255,255,255,.22);
+    color:#fff;font-size:12px;font-weight:600;
+    padding:5px 14px;border-radius:20px;
+    letter-spacing:.04em;
+  }
+
+  /* ── LAYOUT ── */
+  .container{
+    max-width:720px;margin:0 auto;
+    padding:32px 20px 60px;
+  }
+
+  /* ── INTRO CARD ── */
+  .intro-card{
+    background:linear-gradient(135deg,#FFF8E1,#FFF3E0);
+    border:1.5px solid rgba(255,140,0,.2);
+    border-radius:16px;padding:20px 22px;
+    margin-bottom:28px;
+    display:flex;gap:14px;align-items:flex-start;
+  }
+  .intro-card .ic-icon{font-size:26px;flex-shrink:0;margin-top:2px;}
+  .intro-card p{font-size:15px;color:#7C4700;line-height:1.65;}
+
+  /* ── SECTIONS ── */
+  .section{
+    background:var(--card);border-radius:16px;
+    border:1px solid var(--border);
+    margin-bottom:18px;overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.04);
+  }
+  .section-head{
+    display:flex;align-items:center;gap:12px;
+    padding:18px 22px 14px;
+    border-bottom:1px solid var(--border);
+  }
+  .section-icon{
+    width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(135deg,#FFCA00,#FF8C00);
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;flex-shrink:0;
+  }
+  .section-title{font-size:17px;font-weight:800;color:var(--text);}
+  .section-body{padding:18px 22px;}
+  .section-body p{font-size:15px;color:var(--mid);margin-bottom:10px;}
+  .section-body p:last-child{margin-bottom:0;}
+
+  /* ── BULLET LIST ── */
+  .data-list{
+    list-style:none;padding:0;margin:12px 0 0;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .data-list li{
+    display:flex;align-items:flex-start;gap:10px;
+    font-size:15px;color:var(--mid);
+  }
+  .data-list li::before{
+    content:'•';
+    color:var(--brand);font-weight:900;font-size:18px;
+    line-height:1.4;flex-shrink:0;
+  }
+
+  /* ── HIGHLIGHT CHIP ── */
+  .chip{
+    display:inline-block;
+    background:rgba(255,140,0,.1);
+    color:#B45309;font-size:13px;font-weight:700;
+    padding:3px 10px;border-radius:8px;margin:4px 2px;
+  }
+
+  /* ── LINK ── */
+  a{color:var(--brand);text-decoration:none;font-weight:600;}
+  a:hover{text-decoration:underline;}
+
+  /* ── CONTACT BOX ── */
+  .contact-box{
+    background:linear-gradient(135deg,var(--brand),var(--brand-light));
+    border-radius:16px;padding:24px 22px;
+    text-align:center;margin-bottom:18px;
+  }
+  .contact-box .ct-icon{font-size:36px;display:block;margin-bottom:10px;}
+  .contact-box .ct-title{font-size:18px;font-weight:800;color:#fff;margin-bottom:6px;}
+  .contact-box .ct-sub{font-size:14px;color:rgba(255,255,255,.85);margin-bottom:14px;}
+  .contact-box a{
+    display:inline-block;background:#fff;
+    color:var(--brand);font-size:15px;font-weight:800;
+    padding:10px 24px;border-radius:24px;
+    box-shadow:0 4px 14px rgba(0,0,0,.12);
+  }
+
+  /* ── CONSENT BOX ── */
+  .consent-box{
+    background:#F0FDF4;border:1.5px solid #BBF7D0;
+    border-radius:14px;padding:18px 20px;
+    display:flex;gap:12px;align-items:flex-start;
+    margin-bottom:18px;
+  }
+  .consent-box .cb-icon{font-size:22px;flex-shrink:0;margin-top:2px;}
+  .consent-box p{font-size:14px;color:#166534;}
+
+  /* ── FOOTER ── */
+  footer{
+    text-align:center;padding:24px 20px;
+    border-top:1px solid var(--border);
+    font-size:12px;color:var(--light);
+  }
+
+  @media(max-width:480px){
+    .header-title{font-size:22px;}
+    .container{padding:20px 14px 48px;}
+    .section-body{padding:14px 16px;}
+    .section-head{padding:14px 16px 12px;}
+    .contact-box{padding:20px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="header-icon">🧪</span>
+  <div class="header-title">Yeelo Liquid Tube</div>
+  <div class="header-sub">Privacy Policy</div>
+  <div class="updated-chip">Last Updated: June 2026</div>
+</header>
+
+<div class="container">
+
+  <!-- Intro -->
+  <div class="intro-card">
+    <div class="ic-icon">🔒</div>
+    <p>Welcome to <strong>Yeelo Liquid Tube</strong>. Your privacy is important to us. This Privacy Policy explains how information may be collected and used when you play our game.</p>
+  </div>
+
+  <!-- 1. Information We Collect -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">📋</div>
+      <div class="section-title">Information We Collect</div>
+    </div>
+    <div class="section-body">
+      <p>Yeelo Liquid Tube does <strong>not</strong> require users to create an account and does not directly collect personal information such as names, email addresses, or phone numbers.</p>
+      <p>However, third-party services used by the game may collect certain information automatically.</p>
+    </div>
+  </div>
+
+  <!-- 2. Advertising -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">📺</div>
+      <div class="section-title">Advertising</div>
+    </div>
+    <div class="section-body">
+      <p>Yeelo Liquid Tube may use <strong>Google AdMob</strong> to display advertisements, including rewarded ads and interstitial ads.</p>
+      <p>Google and its partners may collect information such as:</p>
+      <ul class="data-list">
+        <li>Device information</li>
+        <li>Advertising identifiers</li>
+        <li>App usage data</li>
+        <li>Diagnostic information</li>
+      </ul>
+      <p style="margin-top:14px;">This information is used to provide and improve advertising services. For more information, please review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <!-- 3. Game Data -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">💾</div>
+      <div class="section-title">Game Data</div>
+    </div>
+    <div class="section-body">
+      <p>The game may store local data on your device to improve your gameplay experience, including:</p>
+      <ul class="data-list">
+        <li>Level progress</li>
+        <li>Game settings</li>
+        <li>Coins and rewards</li>
+        <li>Preferences</li>
+      </ul>
+      <p style="margin-top:14px;">This data is stored <span class="chip">locally on your device</span> to improve your gameplay experience.</p>
+    </div>
+  </div>
+
+  <!-- 4. Children's Privacy -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">👶</div>
+      <div class="section-title">Children's Privacy</div>
+    </div>
+    <div class="section-body">
+      <p>Yeelo Liquid Tube is not intended to collect personal information from children.</p>
+      <p>If you believe that personal information has been provided by a child, please contact us so that appropriate action can be taken.</p>
+    </div>
+  </div>
+
+  <!-- 5. Data Security -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">🛡️</div>
+      <div class="section-title">Data Security</div>
+    </div>
+    <div class="section-body">
+      <p>We take reasonable measures to help protect information processed through the game. However, no method of electronic storage or transmission is completely secure.</p>
+    </div>
+  </div>
+
+  <!-- 6. Changes -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-icon">📝</div>
+      <div class="section-title">Changes to This Privacy Policy</div>
+    </div>
+    <div class="section-body">
+      <p>We may update this Privacy Policy from time to time. Any updates will be posted within the application or on the page where this policy is hosted.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <span class="ct-icon">✉️</span>
+    <div class="ct-title">Have Questions?</div>
+    <div class="ct-sub">If you have any questions about this Privacy Policy, reach out to us:</div>
+    <a href="mailto:yeeloshow@gmail.com">yeeloshow@gmail.com</a>
+  </div>
+
+  <!-- Consent -->
+  <div class="consent-box">
+    <div class="cb-icon">✅</div>
+    <p><strong>Consent:</strong> By using Yeelo Liquid Tube, you agree to the terms of this Privacy Policy.</p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Yeelo Liquid Tube &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
